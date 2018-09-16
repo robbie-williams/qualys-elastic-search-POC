@@ -1,0 +1,17 @@
+# package directories
+node_modules
+jspm_packages
+
+# Serverless directories
+.serverless
+
+#Visual Studio Code
+.vscode
+
+#buildkite
+dist
+
+#Custom
+src/resources/auth
+temp
+support/samples

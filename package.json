@@ -1,0 +1,46 @@
+{
+  "name": "qualys-elastic-search-POC",
+  "version": "0.0.1",
+  "description": "qualys elastic search",
+  "author": "Robert Williams",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "main": "handler.js",
+  "keywords": [
+    "qualys"
+  ],
+  "scripts": {
+    "clean": "rimraf ./dist/*",
+    "test": "mocha --colors --recursive ./src/**/*.test.js"
+  },
+  "bin": {
+    "mocha": "./node_modules/mocha/bin/mocha",
+    "rimraf": "./node_modules/rimraf/bin.js"
+  },
+  "dependencies": {
+    "alasql": "^0.4.6",
+    "alexa-sdk": "^1.0.25",
+    "ask-sdk": "^2.0.6",
+    "ask-sdk-v1adapter": "^2.0.6",
+    "asyncawait": "^1.0.7",
+    "aws-sdk": "^2.259.1",
+    "encodeurl": "^1.0.2",
+    "fibers": "^3.0.0",
+    "jsonic": "^0.3.0",
+    "readline-sync": "^1.4.9",
+    "serverless": "^1.30.3",
+    "serverless-alexa-skills": "0.0.6",
+    "tough-cookie": "^2.4.3",
+    "underscore": "^1.9.1",
+    "xml2js": "^0.4.19"
+  },
+  "devDependencies": {
+    "mocha": "^4.0.1",
+    "rimraf": "^2.6.2",
+    "serverless-plugin-bespoken": "0.0.9",
+    "virtual-alexa": "^0.6.6"
+  }
+}
