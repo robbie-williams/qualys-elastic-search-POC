@@ -9,7 +9,7 @@ This is a sample nodejs application demonstrating how to use the undocumented el
 
 ### how do I use this?
 1. npm install
-2. first create a folder called auth under src/resources.
+2. first create a folder called resources/auth under src. (yes you will need to also create the resources folder)
 3. create a file called qualysBasicAuth.base64.txt in that folder
 4. put your base64 auth string into this file
 4.1 it will look like username:password== except the "username:password" part should be base64 encoded
