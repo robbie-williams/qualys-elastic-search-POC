@@ -1,0 +1,114 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Qualys Elastic- To Share",
+		"_postman_id": "40c49c93-2444-0097-6d42-471b907c58f9",
+		"description": "Elastic Search Related Requests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://qualysguard.qg1.apps.qualys.in/portal-front/dwr/call/plaincall/_svc_asset_AssetQueryService.findAs.dwr",
+			"request": {
+				"url": "https://qualysguard.qg1.apps.qualys.in/portal-front/dwr/call/plaincall/_svc_asset_AssetQueryService.findAs.dwr",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Origin",
+						"value": "https://qualysguard.qg1.apps.qualys.in",
+						"description": ""
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "text/plain",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "*/*",
+						"description": ""
+					},
+					{
+						"key": "Referer",
+						"value": "https://qualysguard.qg1.apps.qualys.in/portal-front/module/asset/",
+						"description": ""
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"description": ""
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9",
+						"description": ""
+					},
+					{
+						"key": "Cookie",
+						"value": "QualysSession=; DWRSESSIONID=; NSC_wt-q01-qpsubm-80=ffffffffaf1c1c7845525d5f4f58455e445a4a42f22a",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "callCount=1\nwindowName=\nc0-scriptName=_svc_asset_AssetQueryService\nc0-methodName=findAs\nc0-id=0\nc0-e1=string:vulnerabilities.vulnerability.title%3A%20%22meltdown%22\nc0-e2=number:0\nc0-e3=number:50\nc0-e4=string:updated\nc0-e5=boolean:false\nc0-param0=Object_Object:{query:reference:c0-e1, offset:reference:c0-e2, limit:reference:c0-e3, sort:reference:c0-e4, sortAsc:reference:c0-e5}\nrequest-template-0={\"$RT$\":true,\"rt\":[\"id\",\"name\",\"assetType\",\"taglist\",\"hostName\",\"operatingSystem\",\"lastVmScanDate\",\"created\",\"updated\",\"showAllTags\",\"nicAddresses\",\"lastUserLoggedIn\",\"trackingMethod\",\"activationModules\",\"activationModulesPending\",\"activationModulesNoProfileFound\",\"activationModulesQueuedManifestGen\",\"sourceInfo\"],\"ct\":{}}\nbatchId=53\ninstanceId=0\npage=%2Fportal-front%2Fmodule%2Fasset%2F\nscriptSessionId=asvbdjhasbfhbfhabfkafbjkbajsfbas\n"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Session Login",
+			"request": {
+				"url": "https://{{base_url}}/api/2.0/fo/session/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Requested-With",
+						"value": "POSTMAN",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					},
+					{
+						"key": "Cookie",
+						"value": "QualysSession=",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "action",
+							"value": "login",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
